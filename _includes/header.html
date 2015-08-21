@@ -1,0 +1,70 @@
+<div id="hdr-banner">
+  <img src="/static/img/header_Background.jpg" class="hdr-background">
+
+  <header>
+    <div class="row nav">
+      <div class="col s12 m8 brand">
+        <div class="menu-icon left"></div>
+        <a href="/"><img src="/static/img/RimesLogo_Color.svg" class="brand-icon left"></a>
+        <p class="title white-text left">{{site.title}}</p>
+      </div>
+
+      <div class="col s12 m4 userbar">
+        <table class="dropdown-box profile-info-box" style="display:none;">
+          <tr>
+            <td class="userid"></td>
+            <td><a onclick="Rimes.actions.logout()">SIGN OUT</a></td>
+          </tr>
+          <tr>
+            <td>
+              <span id="alias-name">Alias</span>
+              <input id="alias-input" type="text" style="display: none;" placeholder="Enter user ID" onkeydown="Rimes.actions.changeAlias('keydown', event)">
+            </td>
+            <td>
+              <a id="alias-change" onclick="Rimes.actions.displayAliasForm()">CHANGE</a>
+              <div id="alias-btns" style="display: none">
+                <div class="tiny checkmark-icons" onclick="Rimes.actions.changeAlias('click')"></div>
+                <span class="close" onclick="Rimes.actions.displayAliasForm()">X</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Help</td>
+            <td><a href="/apps/support/contacts.html">GET HELP</a></td>
+          </tr>
+        </table>
+        <div class="user-icon profile-blue right"></div>
+        <div class="ver-divider right"></div>
+        <img id="a-search" src="/static/img/Search_Gray.svg" class="search-icon right">
+      </div>
+
+      <div class="search-box" style="display:none;">
+        <div class="search container">
+          <table id="search-domain" class="dropdown-box" style="display:none;">
+            <tr>
+              <td class="domain">Website</td>
+            </tr>
+            <tr>
+              <td class="domain">Benchmarks</td>
+            </tr>
+            <tr>
+              <td class="domain">My Feeds</td>
+            </tr>
+          </table>
+          <img id="b-search" src="/static/img/Search_orange.svg" class="search-icon left">
+          <div class="input-field">
+            <div class="sub-menu"></div>
+            <input type="text" id="search-txt" placeholder="Looking for something?">
+          </div>
+          <img id="search-close" src="/static/img/SearchClose_white.svg">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+     <div class="col s12 title white-text center-align">{{page.title}}</div>
+    </div>
+  </header>
+
+  {% include menu.html %}
+</div>

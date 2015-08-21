@@ -1,0 +1,22 @@
+{
+  "name": "new-rimes-online",
+  "version": "1.0.0",
+  "description": "RIMES Redesign",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ff_jennifer_quesada@bitbucket.org/ff_jennifer_quesada/new-rimes-online.git"
+  },
+  "author": "Jennifer Quesada",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ff_jennifer_quesada/new-rimes-online#readme",
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-sass": "^2.0.4"
+  }
+}

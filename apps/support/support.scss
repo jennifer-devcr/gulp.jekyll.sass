@@ -1,0 +1,93 @@
+@import "../../_scss/variables";
+
+section {
+  padding: 1px 0px 0px 0px;
+}
+
+.normal-txt .parag {
+  padding-right: 4%;
+  text-align: justify;
+}
+
+.divider {
+  width: 150px;
+  margin: 0px auto 25px auto;
+}
+
+.section-box {
+  margin: 20px 0px;
+  padding: 0px 25px  15px 25px !important;
+  font-size: 11px;
+
+  .section-subtitle {
+    text-align: center;
+  }
+}
+
+.btn-download {
+  background: $dark-turquoise-1;
+  color: $light-gray-1;
+  border-radius: 3px;
+  width: 63%;
+  padding: 7px;
+  margin: 0 auto;
+  cursor: pointer;
+
+  p {
+    margin: 0;
+  }
+
+  span {
+    font-size: 15px;
+    vert-align: top;
+  }
+
+  img {
+    width: 13px;
+  }
+
+  &:hover {
+    background: #006b9e;
+  }
+}
+
+.pdf-link {
+  display: block;
+  margin: 10px auto 0 auto;
+  padding-bottom: 10px;
+  width: 132px;
+
+  .img-pdf {
+    height: 17px;
+  }
+
+  a {
+    vertical-align: super;
+  }
+}
+
+.contacts-container {
+  p {
+    margin: 5px 0px;
+  }
+
+  a.email:hover {
+    color: $light-blue-1;
+  }
+
+  .divider {
+    width: 130px;
+  }
+
+  .section-box {
+    padding-left: 21px !important;
+    padding-top: 10px !important;
+    width: 172px;
+    margin-top: 121px;
+
+    .section-subtitle {
+      text-align: left;
+      margin-left: -1px;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<config>
+	<dataSource type="CSV">
+		<filename>/apps/bds/cubes/deliveries.tsv</filename>
+		<fieldSeparator><![CDATA[	]]></fieldSeparator>
+	</dataSource>
+</config>

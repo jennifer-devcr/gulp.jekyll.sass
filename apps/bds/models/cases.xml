@@ -1,0 +1,101 @@
+<config>
+    <dataSource type="csv">
+		<filename>/apps/bds/cubes/cases.tsv</filename>
+		<fieldSeparator><![CDATA[	]]></fieldSeparator>
+     </dataSource>
+    <defaultSlice>
+        <axes>
+            <axis name="rows">
+                <hierarchy sort="asc">
+                    <dimensionName>[TYPE]</dimensionName>
+                    <hierarchyName>[TYPE].[TYPE]</hierarchyName>
+                </hierarchy>
+            </axis>
+            <axis name="columns">
+                <hierarchy sort="asc">
+                    <dimensionName>[CREATED]</dimensionName>
+                    <hierarchyName>[CREATED].[CREATED].[Month]</hierarchyName>
+                </hierarchy>
+                <hierarchy>
+                    <dimensionName>[Measures]</dimensionName>
+                    <hierarchyName>[Measures]</hierarchyName>
+                </hierarchy>
+            </axis>
+            <axis name="pages">
+                <hierarchy sort="asc">
+                    <dimensionName>[CREATED]</dimensionName>
+                    <hierarchyName>[CREATED].[CREATED].[Year]</hierarchyName>
+                </hierarchy>
+                <hierarchy sort="asc">
+                    <dimensionName>[CLIENTID]</dimensionName>
+                    <hierarchyName>[CLIENTID].[CLIENTID]</hierarchyName>
+                </hierarchy>
+            </axis>
+        </axes>
+        <measures>
+            <measure aggregation="count" active="true" availableAggregations="count,distinctcount">[Measures].[ASSIGNED]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[ASSIGNED_CITY]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[ASSIGNED_TITLE]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CASE]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CLIENTID]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CLOSED].[Year]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CLOSED].[Month]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CLOSED].[Day]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CONTACT]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CREATED].[Year]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CREATED].[Month]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[CREATED].[Day]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[EMAIL]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[PRIORITY]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[STATUS]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[TITLE]</measure>
+            <measure aggregation="count" active="false" availableAggregations="count,distinctcount">[Measures].[TYPE]</measure>
+        </measures>
+    </defaultSlice>
+    <view/>
+    <params>
+        <param name="configuratorActive">false</param>
+        <param name="configuratorButton">true</param>
+        <param name="configuratorMatchHeight">false</param>
+        <param name="viewType">grid</param>
+        <param name="zoom">1</param>
+        <param name="gridTitle"/>
+        <param name="chartTitle"/>
+        <param name="showFilter">true</param>
+        <param name="showFilterInCharts">true</param>
+        <param name="showAggregations">true</param>
+        <param name="showHierarchyCaptions">true</param>
+        <param name="showMemberProperties ">false</param>
+        <param name="memberProperties "/>
+        <param name="chartOneLevel">false</param>
+        <param name="chartAutoRange">false</param>
+        <param name="chartMultipleMeasures">false</param>
+        <param name="showHeaders">true</param>
+        <param name="showReportFiltersArea">true</param>
+        <param name="editing">false</param>
+        <param name="drillThrough">true</param>
+        <param name="sorting">on</param>
+        <param name="fitGridlines">false</param>
+        <param name="expandAll">false</param>
+        <param name="drillAll">false</param>
+        <param name="showTotals">true</param>
+        <param name="showFiltersExcel">false</param>
+        <param name="showHierarchies">true</param>
+        <param name="showGrandTotals">on</param>
+        <param name="datePattern">dd/MM/yyyy</param>
+        <param name="dateTimePattern">dd/MM/yyyy HH:mm:ss</param>
+        <param name="showChartsWarning">true</param>
+        <param name="showChartMeasures">true</param>
+        <param name="showChartLegendButton">false</param>
+        <param name="defaultHierarchySortName">asc</param>
+        <param name="ignoreQuotedLineBreaks">true</param>
+        <param name="highlightUpdates">true</param>
+        <param name="classicView">false</param>
+        <param name="useOlapFormatting">false</param>
+        <param name="showDefaultSlice">true</param>
+        <param name="showCalculatedValuesButton">true</param>
+        <param name="chartType" pieDataIndex="0" labelsHierarchy="" activeMeasure="">bar</param>
+        <param name="localSettingsUrl"/>
+    </params>
+    <conditions/>
+</config>

@@ -1,0 +1,297 @@
+@import "../../_scss/variables";
+
+/* RIMES Benchmark page */
+
+.bench-page-container {
+  .feeds-mgt, .reports {
+    padding-top: 52px;
+
+    .title {
+      margin-top: 0px;
+      margin-bottom: 5px;
+      font-size: 20px;
+      line-height: 29px;
+    }
+
+    #card1 {
+      background: url('/static/img/FeedDirectory_white.svg') no-repeat;
+    }
+
+    #card2 {
+      background: url('/static/img/FeedsMonitor_White.svg') no-repeat 0px 4px;
+    }
+
+    #card3 {
+      background: url('/static/img/CloudRepositry_White.svg') no-repeat;
+    }
+
+    #card4 {
+      background: url('/static/img/HolidayCalendar_white.svg') no-repeat;
+    }
+
+    #card5 {
+      background: url('/static/img/BlendsExplorer_white.svg') no-repeat;
+      height: 65px;
+      width: 65px;
+    }
+
+    #card6 {
+      background: url('/static/img/AccountReview_Blue.svg') no-repeat;
+    }
+
+    #card7 {
+      background: url('/static/img/FeedInventory_Blue.svg') no-repeat;
+    }
+
+    #card8 {
+      background: url('/static/img/Blends_Blue.svg') no-repeat;
+    }
+
+    #card9, #card10, #card11, #card12, #card13, #card14, #card15 {
+      background: url('/static/img/Cube_LightBlue.svg') no-repeat;
+    }
+
+    #fmopt1 {
+      background: url('/static/img/FeedDirectory_Blue.svg') no-repeat 0px 1px;
+    }
+
+    #fmopt2 {
+      background: url('/static/img/FeedsMonitor_Blue.svg') no-repeat 0px 5px;
+    }
+
+    #fmopt3 {
+      background: url('/static/img/CloudRepositry_Blue.svg') no-repeat 0px 1px;
+    }
+
+    #fmopt4 {
+      background: url('/static/img/HolidayCalendar_Blue.svg') no-repeat -1px 0px;
+      width: 51px;
+      height: 51px;
+    }
+
+    #fmopt5 {
+      background: url('/static/img/BlendsExplorer_Blue.svg') no-repeat;
+    }
+
+    .opts-box{
+      width: 66%;
+      margin: 0 auto;
+      padding-bottom: 58px;
+
+      .img {
+        width: 62px;
+        height: 62px;
+      }
+
+      .opt {
+        display: inline-block;
+        margin: 30px 3% 0px 3%;
+        width: 25%;
+        white-space: nowrap;
+        min-width: 206px;
+      }
+
+      .opt-icon {
+        margin-right: 10px;
+      }
+
+      .opt-label, .opt-icon {
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+
+    .r-card-box.cubes .r-card {
+      margin: 9px 2% 19px 2%;
+      width: 170px;
+
+      .card-icon {
+        margin-top: 10px;
+      }
+
+      .card-label {
+        margin-top: 0px;
+        margin-bottom: 18px
+      }
+    }
+  }
+
+  .change-mgt {
+    position: relative;
+    min-height: 180px;
+    padding: 52px 0px 13px 0px;
+
+    .divider {
+      width: 179px;
+    }
+
+    .title {
+      margin-top: 0px;
+      margin-bottom: 5px;
+      font-size: 20px;
+      line-height: 29px;
+    }
+
+    .ver-divider {
+      height: 120px;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 9px;
+    }
+
+    .box {
+      text-align: center;
+      margin-top: 38px;
+
+      .opt {
+        width: 290px;
+        height: 143px;
+        display: inline-block;
+        margin: 0px 2% 15px 2%;
+        padding: 23px 0px 23px 0px;
+      }
+
+      .opt:hover {
+        #opt1 {
+          background: url("/static/img/NewFeedrequest_Orange.svg") no-repeat 0px  3px;
+          height: 65px;
+          width: 59px;
+        }
+
+        #opt2 {
+          background: url('/static/img/Changerequest_orange.svg') no-repeat;
+        }
+
+        #opt3 {
+          background: url('/static/img/AuditHistory_Orange.svg') no-repeat;
+        }
+
+        .opt-label {
+          color: $orange-1;
+        }
+      }
+
+      .opt-icon {
+        margin: 0 auto;
+
+        .img {
+          width: 65px;
+          height: 65px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      #opt1 {
+        background: url('/static/img/NewsFeedRequest_New_white.svg') no-repeat;
+      }
+
+      #opt2 {
+        background: url('/static/img/Changerequest_white.svg') no-repeat;
+      }
+
+      #opt3 {
+        background: url('/static/img/AuditHistory_New_white.svg') no-repeat;
+      }
+
+      .opt-label{
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .reports {
+    .r-card-box {
+      padding-top: 20px;
+    }
+  }
+
+  .divider {
+    width: 175px;
+    height: 1px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.bench-page-container .reports .r-card:hover{
+  .card-label {
+    color: $orange-1 !important;
+  }
+
+  #card6 {
+    background: url('/static/img/AccountReview_orange.svg') no-repeat;
+  }
+
+  #card7 {
+    background: url('/static/img/FeedInventory_orange.svg') no-repeat;
+  }
+
+  #card8 {
+    background: url('/static/img/Blends_Orange.svg') no-repeat 0px -1px;
+  }
+
+  #card9, #card10, #card11, #card12, #card13, #card14, #card15 {
+    background: url('/static/img/Cube_Orange.svg') no-repeat;
+  }
+}
+
+.bench-page-container .feeds-mgt .r-card:hover {
+  background: $orange-1;
+
+  .card-label {
+    color: #fff !important;
+  }
+
+  .card-icon {
+    background: #fff !important;
+  }
+
+  #card1 {
+    background: url('/static/img/FeedDirectory_orange.svg') no-repeat;
+  }
+
+  #card2 {
+    background: url('/static/img/FeedsMonitor_Orange.svg') no-repeat 0px 4px;
+  }
+
+  #card3 {
+    background: url('/static/img/CloudRepositry_Orange.svg') no-repeat;
+  }
+
+  #card4 {
+    background: url('/static/img/HolidayCalendar_orange.svg') no-repeat;
+  }
+
+  #card5 {
+    background: url('/static/img/BlendsExplorer_orange.svg') no-repeat;
+  }
+}
+
+.bench-page-container .feeds-mgt .opt:hover {
+  color: $orange-1;
+
+  #fmopt1 {
+    background: url('/static/img/FeedDirectory_orange.svg') no-repeat;
+  }
+
+  #fmopt2 {
+    background: url('/static/img/FeedsMonitor_Orange.svg') no-repeat 0px 4px;
+  }
+
+  #fmopt3 {
+    background: url('/static/img/CloudRepositry_Orange.svg') no-repeat;
+  }
+
+  #fmopt4 {
+    background: url('/static/img/HolidayCalendar_orange.svg') no-repeat;
+  }
+
+  #fmopt5 {
+    background: url('/static/img/BlendsExplorer_orange.svg') no-repeat;
+  }
+}
