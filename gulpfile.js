@@ -45,15 +45,15 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('_site/static/rimes/css'))
+        .pipe(gulp.dest('_site/static/css'))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('static/rimes/css'));
+        .pipe(gulp.dest('static/css'));
 });
 
 gulp.task('app-sass', function () {
     var appsPath = [
-            'apps/benchmark',
-            'apps/support'
+            'apps/app1',
+            'apps/app2'
         ],
         result = true;
 
@@ -83,7 +83,7 @@ gulp.task('app-sass', function () {
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
     gulp.watch('apps/**/*.scss', ['app-sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', 'apps/**/*.html', '/static/rimes/js/*.js'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', 'apps/**/*.html', '/static/js/*.js'], ['jekyll-rebuild']);
 });
 
 /**

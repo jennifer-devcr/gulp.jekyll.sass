@@ -2,13 +2,10 @@
 <html lang="en">
   <head>
     {% include head.html %}
-    {% include common-references.html %}
   </head>
   <body>
-    <main class="sticky-footer">
-      {% include header.html %}
-      {{ content }}
-    </main>
-    {% include footer.html %}
+	{% include header.html %}
+	{{ content }}
+	{% include footer.html %}
   </body>
 </html>

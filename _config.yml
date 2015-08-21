@@ -1,14 +1,14 @@
 # Site settings
-title: "RIMES ONLINE"
-email: support@rimes.com
-company: "RIMES Technologies Corporation"
+title: "APP TITLE"
+email: app@app.com
+company: "APP COMPANY INFO"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://online.rimes.com" # the base hostname & protocol for your site
+url: "http://app.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: redcarpet
 highlighter: pygments # or rouge or null
-# permalink: pretty
+permalink: pretty
 
 # Exclude
-exclude: ["node_modules", "gulpfile.js", "package.json", "sample", "static/materialize/sass", "apps/**/*.scss"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "apps/**/*.scss"]
